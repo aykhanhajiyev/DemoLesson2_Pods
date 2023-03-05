@@ -1,0 +1,26 @@
+PODS:
+  - Hero (1.6.2)
+  - SwiftMessages (9.0.6):
+    - SwiftMessages/App (= 9.0.6)
+  - SwiftMessages/App (9.0.6)
+  - TableViewReloadAnimation (0.0.5)
+
+DEPENDENCIES:
+  - Hero
+  - SwiftMessages
+  - TableViewReloadAnimation (~> 0.0.5)
+
+SPEC REPOS:
+  trunk:
+    - Hero
+    - SwiftMessages
+    - TableViewReloadAnimation
+
+SPEC CHECKSUMS:
+  Hero: c69009dbc9e2f0472e081adc644dba05fcedae72
+  SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
+  TableViewReloadAnimation: f3a4c4048efbc56331be98075f26a2e533a14c16
+
+PODFILE CHECKSUM: 94b7ad1dc547c47d7568f7c8619946ea59a9cf7b
+
+COCOAPODS: 1.11.3

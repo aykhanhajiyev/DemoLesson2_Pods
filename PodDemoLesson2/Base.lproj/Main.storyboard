@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="PodDemoLesson2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="l8z-ms-VHb">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyTableViewCell" rowHeight="76" id="Bss-2L-VQG" customClass="MyTableViewCell" customModule="PodDemoLesson2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bss-2L-VQG" id="HxM-Em-MAY">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihc-Ws-Gk2">
+                                                    <rect key="frame" x="64" y="28" width="290" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide1" translatesAutoresizingMaskIntoConstraints="NO" id="g44-n9-dGy">
+                                                    <rect key="frame" x="16" y="18" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="HNU-cC-ldZ"/>
+                                                        <constraint firstAttribute="width" constant="40" id="xW6-hr-bTj"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="image"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.95294117649999999" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Ihc-Ws-Gk2" firstAttribute="leading" secondItem="g44-n9-dGy" secondAttribute="trailing" constant="8" id="2rQ-11-eaN"/>
+                                                <constraint firstItem="Ihc-Ws-Gk2" firstAttribute="centerY" secondItem="HxM-Em-MAY" secondAttribute="centerY" id="GjE-41-gTG"/>
+                                                <constraint firstItem="g44-n9-dGy" firstAttribute="leading" secondItem="HxM-Em-MAY" secondAttribute="leading" constant="16" id="L7r-so-ThT"/>
+                                                <constraint firstItem="g44-n9-dGy" firstAttribute="centerY" secondItem="HxM-Em-MAY" secondAttribute="centerY" id="Oj9-IS-c8F"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Ihc-Ws-Gk2" secondAttribute="trailing" constant="16" id="ghr-oV-Knd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="Ihc-Ws-Gk2" id="c7F-sI-PX5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l8z-ms-VHb" secondAttribute="trailing" id="6qu-wp-uzf"/>
+                            <constraint firstItem="l8z-ms-VHb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DeX-FW-OTG"/>
+                            <constraint firstItem="l8z-ms-VHb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Twu-La-usX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l8z-ms-VHb" secondAttribute="bottom" id="Zdk-7c-MuX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="l8z-ms-VHb" id="atE-i4-kXq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="3.5545023696682461"/>
+        </scene>
+        <!--Home Details View Controller-->
+        <scene sceneID="f2y-2R-WQb">
+            <objects>
+                <viewController storyboardIdentifier="HomeDetailsViewController" id="03p-X9-GeS" customClass="HomeDetailsViewController" customModule="PodDemoLesson2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IUh-bV-RwD">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTM-JN-NuA">
+                                <rect key="frame" x="16" y="47" width="62" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="L0b-ZG-zZM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <action selector="hero_dismissViewController" destination="03p-X9-GeS" eventType="touchUpInside" id="fu4-GQ-WJb"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide1" translatesAutoresizingMaskIntoConstraints="NO" id="afz-5H-cdQ">
+                                <rect key="frame" x="16" y="98" width="358" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="AGM-N5-0kq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="image"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uf9-N9-J8B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="afz-5H-cdQ" firstAttribute="top" secondItem="yTM-JN-NuA" secondAttribute="bottom" constant="16" id="f3d-KJ-EhP"/>
+                            <constraint firstItem="uf9-N9-J8B" firstAttribute="trailing" secondItem="afz-5H-cdQ" secondAttribute="trailing" constant="16" id="kKC-fC-p6g"/>
+                            <constraint firstItem="afz-5H-cdQ" firstAttribute="leading" secondItem="uf9-N9-J8B" secondAttribute="leading" constant="16" id="kWX-Z6-nwp"/>
+                            <constraint firstItem="yTM-JN-NuA" firstAttribute="leading" secondItem="uf9-N9-J8B" secondAttribute="leading" constant="16" id="tSR-dA-Zne"/>
+                            <constraint firstItem="yTM-JN-NuA" firstAttribute="top" secondItem="uf9-N9-J8B" secondAttribute="top" id="wDs-U2-LSU"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="77p-Ed-bNc" appends="YES" id="pYe-d4-tH3"/>
+                        </connections>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="image" destination="afz-5H-cdQ" id="5k8-b7-OPg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JEJ-pU-lGJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="77p-Ed-bNc">
+                    <connections>
+                        <action selector="pan:" destination="03p-X9-GeS" id="RX8-lm-lBJ"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="926" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="slide1" width="968" height="915"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

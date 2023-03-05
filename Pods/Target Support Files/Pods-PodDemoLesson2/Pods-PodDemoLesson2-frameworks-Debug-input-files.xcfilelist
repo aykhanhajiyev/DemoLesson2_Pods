@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-PodDemoLesson2/Pods-PodDemoLesson2-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Hero/Hero.framework
+${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework
+${BUILT_PRODUCTS_DIR}/TableViewReloadAnimation/TableViewReloadAnimation.framework
